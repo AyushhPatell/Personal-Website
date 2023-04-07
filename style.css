@@ -146,7 +146,7 @@ td {
     border: 5px solid royalblue;
 }
 
-/* Moobile layout*/
+/* Mobile layout*/
 
 @media screen and (max-width:600px) {
     nav, a {
