@@ -148,11 +148,30 @@ td {
 
 /* Moobile layout*/
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:799px) {
 
     body {
         background-image: url(background.jpg);
         background-size: cover;
+    }
+
+    nav, a {
+        color: rgb(255, 106, 0);
+        padding: 0.5%;
+        font-size: 100%;
+        font-family: serif;
+        margin-bottom: 2%;
+        text-align: start;
+    }
+
+    .Container {
+        display: flex;
+        padding-right: 100px;
+        margin-top: 0.1%;
+    }
+
+    #Container > a{
+        margin: 5%;
     }
 
     .profile > p{
@@ -170,7 +189,7 @@ td {
 }
 
 /* Tablet layout*/
-@media screen and (min-width:401) and (max-width:1000){
+@media screen and (min-width:800px) and (max-width:1440px){
 
     .profile > p{
         font-size: 15pt;
