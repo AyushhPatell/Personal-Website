@@ -236,5 +236,5 @@ function changeColorToGreen(){
     changeColor('#00FF00')
 }
 _____________________________________________________________________________________________________________________________________________________________________________________________
-These functions change the border color of images within an element with id gallery.
+These functions change the border colour of images within an element with id gallery.
 _____________________________________________________________________________________________________________________________________________________________________________________________
