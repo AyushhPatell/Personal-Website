@@ -1,94 +1,94 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-
-<div id="Container">
-  <a href="https://www.linkedin.com/home">
-    <img src="Linkedin.png" width="25" height="25" alt="LinkedIn">
-  </a>
-  <a href="https://www.instagram.com/">
-    <img src="Instagram.png" width="25" height="25" alt="Instagram">
-  </a>
-  <a href="https://www.facebook.com/">
-    <img src="Facebook.png" width="25" height="25" alt="Facebook">
-  </a>
-</div>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="Aboutme.html">About me</a>
-  <a href="hobby.html">Hobby</a>
-  <a href="form.html">Form</a>
-  <a href="gallery.html">Photo Gallery</a>
-</nav>
-
-<style>
-body {
-    background-image: url(background.jpg);
-    background-size: cover;
-}
-
-nav {
-    background-color: whitesmoke;
-}
-
-nav, a {
-    color: rgb(255, 106, 0);
-    padding: 0.5%;
-    font-size: 130%;
-    font-family: serif;
-    margin-bottom: 2%;
-    text-align: start;
-}
-nav, a:hover {
-    color: #000;
-}
-
-#Container {
-    display: flex;
-    float: right;
-    margin-right: 3%;
-    margin-top: 0.5%;
-}
-
-#Container > a{
-    margin: 6%;
-}
-</style>
-
-<br></br>
-
-<form id="myForm" action="URL" method="post">
-    
-    <label for="First Name">First Name :</label>
-    <input type="text" id="name" name="name">
-
-    <br></br>
-
-    <label for="Last Name">Last Name :</label>
-    <input type="text" id="name" name="name">
-
-    <br></br>
-
-    <label for="age">Age:</label>
-    <input type="number" id="age" name="age">
-
-    <br></br>
-
-    <label for="DOB">D.O.B :</label>
-    <input type="date">
-
-    <br></br>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
-
-    <br></br>
-
-    <input type="submit" value="Submit" onclick="resetPage()">
-  </form>
-
-  <script>
-    function resetPage() {
-      document.getElementById("myForm").reset();
-      location.reload();
-    }
-  </script>
+<html lang="en">
+  <div id="Container">
+    <a href="https://www.linkedin.com/home">
+      <img src="Linkedin.png" width="25" height="25" alt="LinkedIn">
+    </a>
+    <a href="https://www.instagram.com/">
+      <img src="Instagram.png" width="25" height="25" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com/">
+      <img src="Facebook.png" width="25" height="25" alt="Facebook">
+    </a>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Aboutme.html">About me</a>
+    <a href="hobby.html">Hobby</a>
+    <a href="form.html">Form</a>
+    <a href="gallery.html">Photo Gallery</a>
+  </nav>
+  
+  <style>
+  body {
+      background-image: url(background.jpg);
+      background-size: cover;
+  }
+  
+  nav {
+      background-color: whitesmoke;
+  }
+  
+  nav, a {
+      color: rgb(255, 106, 0);
+      padding: 0.5%;
+      font-size: 130%;
+      font-family: serif;
+      margin-bottom: 2%;
+      text-align: start;
+  }
+  nav, a:hover {
+      color: #000;
+  }
+  
+  #Container {
+      display: flex;
+      float: right;
+      margin-right: 3%;
+      margin-top: 0.5%;
+  }
+  
+  #Container > a{
+      margin: 6%;
+  }
+  </style>
+  
+  <br></br>
+  
+  <form id="myForm" action="URL" method="post">
+      
+      <label for="First Name">First Name :</label>
+      <input type="text" id="name" name="name">
+  
+      <br></br>
+  
+      <label for="Last Name">Last Name :</label>
+      <input type="text" id="name" name="name">
+  
+      <br></br>
+  
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age">
+  
+      <br></br>
+  
+      <label for="DOB">D.O.B :</label>
+      <input type="date">
+  
+      <br></br>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+  
+      <br></br>
+  
+      <input type="submit" value="Submit" onclick="resetPage()">
+    </form>
+  
+    <script>
+      function resetPage() {
+        document.getElementById("myForm").reset();
+        location.reload();
+      }
+    </script>
+</html>
