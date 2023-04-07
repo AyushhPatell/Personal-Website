@@ -148,7 +148,7 @@ td {
 
 /* Moobile layout*/
 
-@media screen and (max-width:799px) {
+@media screen and (max-width:600px) {
 
     body {
         background-image: url(background.jpg);
@@ -189,7 +189,7 @@ td {
 }
 
 /* Tablet layout*/
-@media screen and (min-width:800px) and (max-width:1440px){
+@media screen and (min-width:601px) and (max-width:1440px){
 
     .profile > p{
         font-size: 15pt;
