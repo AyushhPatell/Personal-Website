@@ -19,6 +19,36 @@
     <a href="form.html">Form</a>
     <a href="gallery.html">Photo Gallery</a>
   </nav>
+
+  <form id="myForm" action="URL" method="post">
+      
+    <label for="First Name">First Name:</label>
+    <input type="text" id="First_Name" name="First_Name">
+
+    <br></br>
+
+    <label for="Last Name">Last Name:</label>
+    <input type="text" id="Last_Name" name="Last_Name">
+
+    <br></br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age">
+
+    <br></br>
+
+    <label for="DOB">D.O.B :</label>
+    <input type="date">
+
+    <br></br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <br></br>
+
+    <input type="submit" value="Submit" onclick="resetPage()">
+  </form>
   
   <style>
   body {
@@ -53,38 +83,6 @@
       margin: 6%;
   }
   </style>
-  
-  <br></br>
-  
-  <form id="myForm" action="URL" method="post">
-      
-      <label for="First Name">First Name :</label>
-      <input type="text" id="name" name="name">
-  
-      <br></br>
-  
-      <label for="Last Name">Last Name :</label>
-      <input type="text" id="name" name="name">
-  
-      <br></br>
-  
-      <label for="age">Age:</label>
-      <input type="number" id="age" name="age">
-  
-      <br></br>
-  
-      <label for="DOB">D.O.B :</label>
-      <input type="date">
-  
-      <br></br>
-  
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email">
-  
-      <br></br>
-  
-      <input type="submit" value="Submit" onclick="resetPage()">
-    </form>
   
     <script>
       function resetPage() {
