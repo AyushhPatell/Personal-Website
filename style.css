@@ -176,17 +176,17 @@ td {
         font-size: 8pt;
     }
 
-    .Idol {
-        margin-top: 100px;
-        margin-bottom: 150px;
-    }
-
     .bookItems {
         display: flex;
         flex-direction: column;
     }
     
     .book {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Grid {
         display: flex;
         flex-direction: column;
     }
