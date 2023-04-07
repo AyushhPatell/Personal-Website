@@ -150,7 +150,7 @@ td {
 
 @media screen and (max-width:600px) {
     nav, a {
-        color: rgb(25, 106, 0);
+        color: rgb(255, 106, 0);
         padding: 0.5%;
         font-size: 100%;
         font-family: serif;
