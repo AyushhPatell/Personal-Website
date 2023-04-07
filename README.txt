@@ -8,9 +8,9 @@ It is Hosted on : https://ayushhpatell.github.io/Assignment3/
 _____________________________________________________________________________________________________________________________________________________________________________________________
 The given below websites were used for creating wireframes -
 
-Article title - wire framing tool
+Article - wire framing tool
 URL - https://wireframe.cc/
-Website title - Wireframe.cc
+Websit - Wireframe.cc
 Date accessed - April 5, 2023_____________________________________________________________________________________________________________________________________________________________________________________________
 List of Assets
 
