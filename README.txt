@@ -1,9 +1,9 @@
-README
+
 
 References and Citations
-BONUS: FREE HOSTING is done using GitHub.io
+BONUS: FREE HOSTING of Website :
 
-It is Hosted on : 
+It is Hosted on : https://ayushhpatell.github.io/Assignment3/
 
 _____________________________________________________________________________________________________________________________________________________________________________________________
 The given below websites were used for creating wireframes -
