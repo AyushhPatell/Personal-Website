@@ -149,14 +149,8 @@ td {
 /* Moobile layout*/
 
 @media screen and (max-width:600px) {
-
-    body {
-        background-image: url(background.jpg);
-        background-size: cover;
-    }
-
     nav, a {
-        color: rgb(255, 106, 0);
+        color: rgb(25, 106, 0);
         padding: 0.5%;
         font-size: 100%;
         font-family: serif;
@@ -185,6 +179,16 @@ td {
     .Idol {
         margin-top: 100px;
         margin-bottom: 150px;
+    }
+
+    .bookItems {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .book {
+        display: flex;
+        flex-direction: column;
     }
 }
 
