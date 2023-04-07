@@ -120,6 +120,10 @@ td {
     flex-wrap: wrap;
 }
 
+.bookItems.hidden {
+    display: none;
+  }
+
 .education{
     padding: 25px;
     width: 400px;
@@ -133,11 +137,46 @@ td {
     flex-wrap: wrap;
     justify-content: center;
     width: 80%;
+    margin-bottom: 28px;
 }
-
 .gallery img{
     width: 200px;
     height: 200px;
     margin: 20px;
-    border: 10px solid royalblue;
+    border: 5px solid royalblue;
+}
+
+/* Moobile layout*/
+
+@media screen and (max-width:400px) {
+
+    body {
+        background-image: url(background.jpg);
+        background-size: cover;
+    }
+
+    .profile > p{
+        font-size: 10pt;
+    }
+
+    .para > p {
+        font-size: 8pt;
+    }
+
+    .Idol {
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+}
+
+/* Tablet layout*/
+@media screen and (min-width:401) and (max-width:1000){
+
+    .profile > p{
+        font-size: 15pt;
+    }
+
+    .para > p {
+        font-size: 12pt;
+    }
 }

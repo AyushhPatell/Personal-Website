@@ -1,4 +1,37 @@
-<form action="URL" method="post">
+<nav>
+  <a href="index.html">Home</a>
+  <a href="Aboutme.html">About me</a>
+  <a href="hobby.html">Hobby</a>
+  <a href="form.html">Form</a>
+  <a href="gallery.html">Photo Gallery</a>
+</nav>
+
+<style>
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+nav {
+    background-color: whitesmoke;
+}
+
+nav, a {
+    color: rgb(255, 106, 0);
+    padding: 0.5%;
+    font-size: 130%;
+    font-family: serif;
+    margin-bottom: 2%;
+    text-align: start;
+}
+nav, a:hover {
+    color: #000;
+}
+</style>
+
+<br></br>
+
+<form id="myForm" action="URL" method="post">
     
     <label for="First Name">First Name :</label>
     <input type="text" id="name" name="name">
@@ -25,5 +58,12 @@
 
     <br></br>
 
-    <input type="submit">
+    <input type="submit" value="Submit" onclick="resetPage()">
   </form>
+
+  <script>
+    function resetPage() {
+      document.getElementById("myForm").reset();
+      location.reload();
+    }
+  </script>

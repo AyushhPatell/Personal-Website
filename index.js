@@ -1,3 +1,13 @@
-const myProfileDesc = document.createElement("p");
-myProfileDesc.innerText = " I am Ayush Patel and I am mojoring in Computer Science. I am highly motivated and am extremely passionate about Web Development. I always try to gain knowledge to develope my skills. I selected Computer Science in my Higher School and at that time I started getting ineterested in Programming and AI. I decided that in future, I will make my carrier in computer science. I am very passionate for Computer programming, I have attended many semiars of Web Development and Artificial Intelligence to enhance my knowledge in this field.";
-document.getElementById('profile').appendChild(myProfileDesc)
+  const profileText = document.querySelector('h1');
+  profileText.addEventListener('mouseover', () => {
+    profileText.style.color = 'red';
+  });
+  profileText.addEventListener('mouseout', () => {
+    profileText.style.color = 'black';
+  });
+
+  const toggleBtn = document.getElementById("FavBooks");
+  const FavBooks = document.querySelector(".bookItems");
+  toggleBtn.addEventListener("click", () => {
+    FavBooks.classList.toggle("hidden");
+  });
