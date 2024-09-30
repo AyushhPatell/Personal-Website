@@ -3,9 +3,11 @@
 <link rel="icon" href="B.png">
 <title>Photo gallery</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 
 
 <body>
+
     <div id="Container">
         <a href="https://www.linkedin.com/home">
             <img src="Linkedin.png" width="25" height="25" alt="LinkedIn">
@@ -24,7 +26,7 @@
         <a href="hobby.html">Hobby</a>
         <a href="form.html">Form</a>
         <a href="MusicPlayer.html">Music Player</a>
-        <a href="InternshipCRA.html">Internship Experience</a>
+        <a href="Experiences.html">Experiences</a>
     </nav>
     <h1>Photo Gallery :-</h1>
     
@@ -52,6 +54,33 @@
 
    
 </body>
+
+
+ <div id="lightbox"></div>
+
+
 <script src="gallery.js"></script>
+
+<script>
+    const galleryItems = document.querySelectorAll('.gallery img');
+    const lightbox = document.getElementById('lightbox');
+
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const img = document.createElement('img');
+            img.src = item.src;
+            while (lightbox.firstChild) {
+                lightbox.removeChild(lightbox.firstChild);
+            }
+            lightbox.appendChild(img);
+            lightbox.style.display = 'flex';
+        });
+    });
+
+    lightbox.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+    });
+
+</script>
 
 </html>
