@@ -115,3 +115,69 @@ i.fa-volume-down, i.fa-volume-up {
 i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
   cursor: pointer;
 }
+
+
+
+/* CSS Styles for Playlist */
+
+.playlist {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#playlist-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#playlist-items li {
+  padding: 10px;
+  margin: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#playlist-items li:hover {
+  background-color: #e0e0e0;
+}
+
+#playlist-items .active-track {
+  background-color: #ff6a00;
+  color: white;
+}
+
+
+/* Shuffle button */
+
+.shuffle-track {
+  padding: 25px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.shuffle-track:hover {
+  opacity: 1.0;
+}
+
+
+/* Design and Animation */
+
+.track-art {
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+  border-radius: 15%;
+  animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
