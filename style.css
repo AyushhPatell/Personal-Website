@@ -1,3 +1,27 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
     margin: 1;
 }
@@ -203,3 +227,447 @@ td {
         font-size: 12pt;
     }
 }
+
+/*-----------------------------------------------------------------------------*/
+
+body {
+    background-color: lightgreen;
+  
+    /* Smoothly transition the background color */
+    transition: background-color .5s;
+  }
+  
+  .player {
+    height: 95vh;
+    display: flex;
+    align-items: center;* {
+        margin: 1;
+    }
+    
+    body {
+        background-image: url(background.jpg);
+        background-size: cover;
+    }
+    
+    nav {
+        background-color: whitesmoke;
+    }
+    
+    nav, a {
+        color: rgb(255, 106, 0);
+        padding: 0.5%;
+        font-size: 130%;
+        font-family: serif;
+        margin-bottom: 2%;
+        text-align: start;
+    }
+    nav, a:hover {
+        color: #000;
+    }
+    ul > li {
+        font-size: 1pc;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .color {
+        background-color: antiquewhite;
+        width: 120px;
+    }
+    
+    ol > li{
+        padding: 4px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    h3 ~ img {
+        margin: 0;
+    }
+    
+    h4 + a {
+        margin: 1%;
+    }
+    
+    h4 > p {
+        color: black;
+    }
+    
+    p::first-letter {
+        font-size: large;
+    }
+    
+    #Container {
+        display: flex;
+        float: right;
+        margin-right: 3%;
+        margin-top: 0.5%;
+    }
+    
+    #Container > a{
+        margin: 6%;
+    }
+    
+    .Idol{
+        display: grid; 
+        float: left;  
+        margin-left: 1%;
+        margin-right: 4%;
+    }
+    
+    .Grid {
+        margin-top: 4%;
+        margin-bottom: 4%;
+        font-size: 1.2pc;
+    }
+    
+    img[alt~="photo"] {
+        border: 5px solid whitesmoke;
+        float: right;
+        margin-right: 5%;
+        margin-left: 6%; 
+        padding: 0;
+    }
+    
+    img[alt~="Ratan"] {
+        border: 4px solid black;
+        margin: 0;
+        padding: 0;
+    }
+    
+    img[alt~="Sundar"] {
+        border: 4px solid black;
+        margin-bottom: 3%;
+        padding: 0;
+    }
+    
+    .profile >p {
+        font-size: 17px;
+    }
+    
+    table {
+        border-collapse: collapse;
+    }
+    
+    td {
+        padding: 7px;
+    }
+    .book{
+        padding: 25px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bookItems{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .bookItems.hidden {
+        display: none;
+      }
+    
+    .education{
+        padding: 25px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin-bottom: 28px;
+    }
+    .gallery img{
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        border: 5px solid royalblue;
+    }
+    
+    /* Mobile layout*/
+    
+    @media screen and (max-width:600px) {
+        nav, a {
+            color: rgb(255, 106, 0);
+            padding: 0.5%;
+            font-size: 100%;
+            font-family: serif;
+            margin-bottom: 2%;
+            text-align: start;
+        }
+    
+        .Container {
+            display: flex;
+            padding-right: 100px;
+            margin-top: 0.1%;
+        }
+    
+        #Container > a{
+            margin: 5%;
+        }
+    
+        .profile > p{
+            font-size: 10pt;
+        }
+    
+        .para > p {
+            font-size: 8pt;
+        }
+    
+        .bookItems {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .book {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .Grid {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    /* Tablet layout*/
+    @media screen and (min-width:601px) and (max-width:1440px){
+    
+        .profile > p{
+            font-size: 15pt;
+        }
+    
+        .para > p {
+            font-size: 12pt;
+        }
+    }
+    
+    /*-----------------------------------------------------------------------------*/
+    
+    body {
+        background-color: lightgreen;
+      
+        /* Smoothly transition the background color */
+        transition: background-color .5s;
+      }
+      
+      .player {
+        height: 95vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .details {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 25px;
+      }
+      
+      .track-art {
+        margin: 25px;
+        height: 250px;
+        width: 250px;
+        background-image: url("https://images.pexels.com/photos/262034/pexels-photo-262034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+        background-size: cover;
+        border-radius: 15%;
+      }
+      
+      .now-playing {
+        font-size: 1rem;
+      }
+      
+      .track-name {
+        font-size: 3rem;
+      }
+      
+      .track-artist {
+        font-size: 1.5rem;
+      }
+      
+      .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      
+      .playpause-track, .prev-track, .next-track {
+        padding: 25px;
+        opacity: 0.8;
+      
+        /* Smoothly transition the opacity */
+        transition: opacity .2s;
+      }
+      
+      .playpause-track:hover, .prev-track:hover, .next-track:hover {
+        opacity: 1.0;
+      }
+      
+      .slider_container {
+        width: 75%;
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      /* Modify the appearance of the slider */
+      .seek_slider, .volume_slider {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        height: 5px;
+        background: black;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+      
+      /* Modify the appearance of the slider thumb */
+      .seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        background: white;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+      
+      .seek_slider:hover, .volume_slider:hover {
+        opacity: 1.0;
+      }
+      
+      .seek_slider {
+        width: 60%;
+      }
+      
+      .volume_slider {
+        width: 30%;
+      }
+      
+      .current-time, .total-duration {
+        padding: 10px;
+      }
+      
+      i.fa-volume-down, i.fa-volume-up {
+        padding: 10px;
+      }
+      
+      i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+        cursor: pointer;
+      }
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  
+  .track-art {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-image: url("https://images.pexels.com/photos/262034/pexels-photo-262034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    border-radius: 15%;
+  }
+  
+  .now-playing {
+    font-size: 1rem;
+  }
+  
+  .track-name {
+    font-size: 3rem;
+  }
+  
+  .track-artist {
+    font-size: 1.5rem;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .playpause-track, .prev-track, .next-track {
+    padding: 25px;
+    opacity: 0.8;
+  
+    /* Smoothly transition the opacity */
+    transition: opacity .2s;
+  }
+  
+  .playpause-track:hover, .prev-track:hover, .next-track:hover {
+    opacity: 1.0;
+  }
+  
+  .slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modify the appearance of the slider */
+  .seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  /* Modify the appearance of the slider thumb */
+  .seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .seek_slider:hover, .volume_slider:hover {
+    opacity: 1.0;
+  }
+  
+  .seek_slider {
+    width: 60%;
+  }
+  
+  .volume_slider {
+    width: 30%;
+  }
+  
+  .current-time, .total-duration {
+    padding: 10px;
+  }
+  
+  i.fa-volume-down, i.fa-volume-up {
+    padding: 10px;
+  }
+  
+  i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+    cursor: pointer;
+  }
